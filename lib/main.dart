@@ -13,15 +13,27 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       home: Scaffold(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Container(
-            color: Colors.white,
-            height: 100.0,
-            width: 100.0,
-            margin: const EdgeInsets.only(left: 30.0),
-            padding: const EdgeInsets.all(20.0),
-            child: const Text('Hello'),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Container(
+                color: Colors.white,
+                child: const Text('Hello'),
+              ),
+              const SizedBox(
+                width: 20.0,
+              ),
+              Container(
+                color: Colors.blue,
+                child: const Text('Hello'),
+              ),
+              Container(
+                color: Colors.red,
+                child: const Text('Hello'),
+              ),
+            ],
           ),
         ),
       ),
