@@ -16,22 +16,31 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Container(
-                color: Colors.white,
-                child: const Text('Hello'),
-              ),
-              const SizedBox(
-                width: 20.0,
-              ),
-              Container(
-                color: Colors.blue,
-                child: const Text('Hello'),
-              ),
-              Container(
                 color: Colors.red,
-                child: const Text('Hello'),
+                width: 100.0,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.yellow,
+                  ),
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.green,
+                  ),
+                ],
+              ),
+              Container(
+                width: 100.0,
+                color: Colors.blue,
               ),
             ],
           ),
